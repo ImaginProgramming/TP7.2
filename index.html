@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Escolar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Gestion Escolar</h1>
+
+    <div id="panel-inicial" class="menu-cuadricula">
+        <button type="button" class="boton-panel" onclick="mostrar_submenu('crear')">
+            CREAR
+        </button>
+        <button type="button" class="boton-panel" onclick="mostrar_submenu('ver')">
+            VER CREADOS
+        </button>
+    </div>
+
+    <div id="sub-crear" class="menu-cuadricula oculta">
+        <a href="crearE.html" class="boton-panel">Crear Estudiante</a>
+        <a href="crearD.html" class="boton-panel">Crear Docente</a>
+        <button type="button" class="boton-panel boton-ancho" onclick="volver_inicio()">Volver</button>
+    </div>
+
+    <div id="sub-ver" class="menu-cuadricula oculta">
+        <a href="estudiantes.html" class="boton-panel">Ver Estudiantes</a>
+        <a href="docentes.html" class="boton-panel">Ver Docentes</a>
+        <a href="cursos.html" class="boton-panel boton-ancho">Ver Cursos</a>
+        <button type="button" class="boton-panel boton-ancho" onclick="volver_inicio()">Volver</button>
+    </div>
+
+    <script>
+        function mostrar_submenu(opcion) {
+            document.getElementById("panel-inicial").classList.add("oculta");
+            if (opcion == "crear") {
+                document.getElementById("sub-crear").classList.remove("oculta");
+            } else {
+                document.getElementById("sub-ver").classList.remove("oculta");
+            }
+        }
+
+        function volver_inicio() {
+            document.getElementById("sub-crear").classList.add("oculta");
+            document.getElementById("sub-ver").classList.add("oculta");
+            document.getElementById("panel-inicial").classList.remove("oculta");
+        }
+    </script>
+</body>
+</html>

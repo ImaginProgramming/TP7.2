@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 560px;
+    margin: 20px auto;
+    background: rgb(235, 240, 245);
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(30, 60, 90);
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.menu a {
+    background: white;
+    border: 1px solid rgb(200, 210, 220);
+    border-radius: 6px;
+    padding: 6px 10px;
+    color: rgb(30, 60, 90);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.oculta {
+    display: none;
+}
+
+.menu-cuadricula {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.boton-panel {
+    flex: 1 1 45%;
+    background: white;
+    border: 2px solid rgb(200, 210, 220);
+    border-radius: 10px;
+    padding: 25px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(30, 60, 90);
+    font-weight: bold;
+    font-size: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.boton-ancho {
+    flex: 1 1 100%;
+}
+
+.tarjeta {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.ficha {
+    background: white;
+    border: 2px solid rgb(210, 215, 225);
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: rgb(40, 110, 160);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.boton-borrar {
+    background: rgb(120, 130, 140);
+}
+
+.volver {
+    display: block;
+    margin-bottom: 12px;
+    color: rgb(40, 110, 160);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ficha h2 {
+    color: rgb(30, 60, 90);
+    font-size: 17px;
+    margin: 0 0 6px 0;
+}
+
+.ficha h3 {
+    margin: 4px 0;
+    color: gray;
+    font-size: 14px;
+}
+
+.ficha input, .ficha select {
+    width: 110px;
+    display: block;
+}
+
+.ficha button {
+    width: auto;
+    background: rgb(40, 150, 110);
+    padding: 6px 12px;
+    margin-left: 5px;
+}
+
+.ficha .btn-eliminar {
+    background: rgb(200, 60, 60);
+    margin-top: 8px;
+    display: block;
+    width: 100%;
+}
+
+.contenedor-columnas {
+    display: flex;
+    gap: 12px;
+}
+
+.columna {
+    flex: 1;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.columna h2 {
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 8px;
+}

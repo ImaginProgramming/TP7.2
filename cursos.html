@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Cursos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="index.html" class="volver">&larr; Volver al Inicio</a>
+
+    <div class="tarjeta">
+        <h2>Buscar por Curso</h2>
+        <label for="filtro-curso">Elegi un curso:</label>
+        <select id="filtro-curso">
+            <option value="1ro">1ro</option>
+            <option value="2do">2do</option>
+            <option value="3ro">3ro</option>
+            <option value="4to">4to</option>
+            <option value="5to">5to</option>
+            <option value="6to">6to</option>
+            <option value="7mo">7mo</option>
+        </select>
+        <button type="button" onclick="buscarPorCurso()">Buscar</button>
+    </div>
+
+    <div class="contenedor-columnas">
+        <div class="columna">
+            <h2>Docentes</h2>
+            <div id="curso-docentes"></div>
+        </div>
+
+        <div class="columna">
+            <h2>Estudiantes</h2>
+            <div id="curso-estudiantes"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

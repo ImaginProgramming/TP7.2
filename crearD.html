@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Docente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="index.html" class="volver">&larr; Volver al Inicio</a>
+
+    <div class="tarjeta">
+        <h2>Nuevo Docente</h2>
+        <form id="form-docente">
+            <label for="doc-nombre">Nombre:</label>
+            <input type="text" id="doc-nombre">
+
+            <label for="doc-especialidad">Especialidad:</label>
+            <input type="text" id="doc-especialidad">
+        </form>
+        <button type="button" onclick="guardar_docente()">Guardar</button>
+        <button type="button" class="boton-borrar" onclick="limpiarFormularioDocente()">Limpiar</button>
+    </div>
+
+    <div class="tarjeta">
+        <h2>Ultimo docente cargado</h2>
+        <div id="ultimo-docente" class="resultado">
+            <p>Todavia no se cargo ningun docente.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

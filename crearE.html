@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Estudiante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="index.html" class="volver">&larr; Volver al Inicio</a>
+
+    <div class="tarjeta">
+        <h2>Nuevo Estudiante</h2>
+        <form id="form-estudiante">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad">
+
+            <label for="curso">Curso:</label>
+            <select id="curso">
+                <option value="1ro">1ro</option>
+                <option value="2do">2do</option>
+                <option value="3ro">3ro</option>
+                <option value="4to">4to</option>
+                <option value="5to">5to</option>
+                <option value="6to">6to</option>
+                <option value="7mo">7mo</option>
+            </select>
+        </form>
+        <button type="button" onclick="guardar_estudiante()">Guardar</button>
+        <button type="button" class="boton-borrar" onclick="limpiarFormularioEstudiante()">Limpiar</button>
+    </div>
+
+    <div class="tarjeta">
+        <h2>Ultimo estudiante cargado</h2>
+        <div id="ultimo-ingresado" class="resultado">
+            <p>Todavia no se cargo ningun estudiante.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
